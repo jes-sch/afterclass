@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+}
+
+nav{
+    height: 150px;
+    width: 100%;
+}
+
+.hide{
+    font-size: 30px;
+    padding: 15px;
+    color: #49d70b;
+    text-shadow: 5px 5px 5px #008200;
+    cursor: pointer;
+    display: none;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: fixed;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: #1124f2;
+    font-size: 17px;
+    text-shadow: 3px 3px 3px #0000B2;
+}
+
+.menu li a:hover{
+    background-color: #49d70b;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/* Main */
+
+.titulo{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h1 a{
+    color: #49d70b;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px #008200;
+}
+
+.subtitulo{
+    color:#1124f2;
+    padding-bottom: 5px;
+}
+
+.hola{
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 150px;
+}
+
+.soy{
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.soy span{
+    color: #1124f2;
+}
+
+#imgPerfil{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 4px solid #1124f2;
+    padding: 15px;
+    width: 280px;
+    height: 280px;
+}
+
+.soyTexto{
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+    width: 50%;
+    line-height: 36px;
+    float: right;
+    padding-right: 50px;
+}
+
+.soyTexto span{
+    color:#1124f2;
+}
+
+h1{
+    color: #49d70b;
+    padding-top: 10px;
+}
+
+.inspoImg{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.boxArtists{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.inspoText{
+    width: 70%;
+}
+
+/* Sección: ACERCA DE MÍ */
+
+.saludo{
+    padding-left: 20px;
+    text-shadow: 4px 4px 4px #008200;
+}
+
+.aboutMe{
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.aboutMe span{
+    color: #1124f2;
+}
+
+.aboutMeText{
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+    width: 50%;
+    line-height: 36px;
+    float: right;
+    padding-right: 50px;
+}
+
+.aboutMeText span{
+    color:#1124f2;
+}
+
+/* Termina Sección: ACERCA DE MÍ */
+
+/* Sección: ISPO */
+
+#inspo{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-shadow: 4px 4px 4px #008200;
+}
+
+.inspoText{
+    padding-left: 20px;
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.inspoText span{
+    color: #1124f2;
+}
+
+.artistasInspo{
+    padding-left: 20px;
+    color: #eb0ea7;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.artistasInspo span{
+    color: #fb5c04;
+    text-shadow: 4px 4px 4px #AD0B00;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width:790px) {
+    ul li {
+        width: 100%;
+        padding: 16px;
+        text-align: left;
+        display: none;
+    }
+
+    .hide{
+        display: block;
+    }
+}
+
+/* Termina Sección: ISPO */
+
+/* Comienza el footer */
+
+footer{
+    color:#1124f2;
+    min-height: 50px;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#redes{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#redes a{
+    text-align: center;
+    color: #49d70b;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#copy{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    color: #1124f2;
+    font-size: 16px;
+}
+
+/* Termina el footer */
+
+.subir{
+    height: 25px;
+    width: 20px;
+    color:#49d70b;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
+}
